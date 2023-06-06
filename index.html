@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de aumentos</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <nav>
+    <img src="./img/logo main.png" alt="logo">
+</nav>
+<main>
+  <h1>Calculadora de aumentos</h1>
+  <form id="calculator">
+    <div>
+      <label for="tvPrice">Precio TV:</label>
+      <input type="number" id="tvPrice" step="0.01" value="0">
+    </div>
+    <div>
+      <label for="internetPrice">Precio Internet:</label>
+      <input type="number" id="internetPrice" step="0.01" value="0">
+    </div>
+    <div>
+      <label for="increase">Aumento (%):</label>
+      <input type="number" id="increase" step="0.01" value="0">
+    </div>
+    <div>
+      <label for="promotion">Descuento de promoción:</label>
+      <select id="discountType">
+        <option value="percentage">%</option>
+        <option value="amount">$</option>
+      </select>
+      <input type="number" id="promotion" step="0.01" value="0">
+      
+    </div>
+    <div>
+      <label for="additionalCharges">Adicionales:</label>
+      <input type="number" id="additionalCharges" step="0.01" value="0">
+    </div>
+    <div>
+      <label for="convergentDiscount">Descuento convergente:</label>
+      <input type="number" id="convergentDiscount" step="0.01" value="0">
+    </div>
+    <button type="button" onclick="calculateTotal()">Calcular</button>
+    <div class="total">
+      <label for="total">Total:</label>
+      <input type="number" id="total" disabled>
+      
+    <button type="button" class="button2" onclick="resetCalculator()">Limpiar</button>
+    </div>
+  </form>
+</main>
+<footer id="contacto">
+  Creado por <a href="https://estebanchavez27.github.io/MiPortafolio/" target="_blank">Esteban Chávez</a> - <a href="mailto:estebanchavezdev@gmail.com" target="_blank">estebanchavezdev@gmail.com</a>
+</footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
